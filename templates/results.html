@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>results</h2>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 30px 5%;
+        }
+        td {
+            width: 50%;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background: #dddddd;
+        }
+        tr:hover {
+            background: #bbbbbb;
+        }
+    </style>
+     <table>
+        {% for row in table %}
+        <tr>
+            <td class="super-secret-class">
+                {% if row.strong %}
+                <h4> {{ row.name }} </h4>
+                {% else %}
+                <span> {{ row.name }} </span>
+                {% endif %}
+            </td>
+            <td>
+                {{ row.lastname }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
