@@ -11,7 +11,17 @@ def main():
     soup = BeautifulSoup(response.content, 'html.parser')
 
     # select your objects
-    elements = [elem for elem in soup.select('.super-secret-class')]
+    elements = [elem for elem in soup.select('.super-secret-class' )]
+
+    def filter_func(elem):
+        if "strong" == False:
+            return True
+        if "strong"==True:
+            return False
+        
+
+    elements = list(filter(filter_func,elements))
+
 
     print(f"Es wurden {len(elements)} Elemente gefunden.")
 
