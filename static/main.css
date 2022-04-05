@@ -28,13 +28,16 @@ margin: 40px 40px;
 padding: 20px;
 border:solid rgb(116, 167, 41);
 color: white;
+border-radius: 7px;
+
 
 }
 
 .navbar {
     background-color: rgb(116, 167, 41);
     text-align: left;
-    padding: 50px;
+    padding: 30px;
+    width: 180px;
     
 }
 .nav-item {
@@ -52,7 +55,7 @@ color: white;
     background-color: white;
     margin-right: 300px;
     margin-left: 300px;
-    padding:20px;
+    padding: 15px;px;
     margin-top: -200px;
 }
 
