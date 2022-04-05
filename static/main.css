@@ -17,6 +17,49 @@ body {
     width: 20%;
     height: 200px;
 }
+body {
+    background-color: black;
+}
+
+h1 {
+text-align: right;
+background-color: black;
+margin: 40px 40px;
+padding: 20px;
+border:solid rgb(116, 167, 41);
+color: white;
+border-radius: 7px;
+
+
+}
+
+.navbar {
+    background-color: rgb(116, 167, 41);
+    text-align: left;
+    padding: 30px;
+    width: 180px;
+    
+}
+.nav-item {
+    list-style: none;
+}
+
+
+.nav-link {
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+    color:white
+}
+#content {
+    background-color: white;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding: 15px;px;
+    margin-top: -200px;
+}
+
+
 
 /* Implementieren Sie Ihre Änderungen hier. Lassen Sie den Code oben so wie er
 * ist!!! */
